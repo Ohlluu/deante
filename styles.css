@@ -289,6 +289,20 @@ body {
     opacity: 0.8;
 }
 
+.featured-thumbnail {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.featured-thumbnail:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;
@@ -852,6 +866,10 @@ body {
 
     .featured-image {
         order: -1;
+    }
+
+    .featured-thumbnail {
+        max-width: 100%;
     }
 
     .cta-grid {
