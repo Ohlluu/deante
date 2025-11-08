@@ -925,3 +925,147 @@ button:focus-visible {
     outline: 3px solid var(--primary-color);
     outline-offset: 2px;
 }
+
+/* ===================================
+   Mobile Optimization for Instagram Users
+   =================================== */
+
+/* Ensure all touch targets are at least 48x48px */
+@media (max-width: 768px) {
+    .cta-card {
+        min-height: 100px;
+        padding: 1.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn {
+        min-height: 56px;
+        padding: 1.25rem 2rem;
+        font-size: 1.05rem;
+    }
+
+    .platform-link {
+        min-height: 80px;
+        padding: 1.5rem;
+    }
+
+    .social-nav a {
+        padding: 0.5rem;
+        min-width: 44px;
+        min-height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Larger spacing for easier scrolling */
+    .links-section {
+        padding: 3rem 0;
+    }
+
+    .content-section,
+    .platforms-section,
+    .guests-section,
+    .team-section {
+        margin-bottom: 3rem;
+    }
+
+    /* Make text more readable on mobile */
+    body {
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    .hero-description {
+        font-size: 1.0625rem;
+        line-height: 1.7;
+    }
+
+    .cta-content h3 {
+        font-size: 1.125rem;
+    }
+
+    .cta-content p {
+        font-size: 0.9375rem;
+    }
+
+    /* Optimize container padding for mobile */
+    .container {
+        padding: 0 16px;
+    }
+
+    /* Make featured card more prominent */
+    .featured-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .featured-content h3 {
+        font-size: 1.625rem;
+        line-height: 1.3;
+    }
+
+    /* Ensure smooth scrolling on mobile */
+    html {
+        scroll-behavior: smooth;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    /* Optimize header for mobile */
+    .header {
+        padding: 0.875rem 0;
+    }
+
+    .logo-wrapper {
+        gap: 0.625rem;
+    }
+}
+
+/* Extra optimizations for very small screens (iPhone SE, etc) */
+@media (max-width: 375px) {
+    .container {
+        padding: 0 12px;
+    }
+
+    .cta-card {
+        padding: 1.5rem 1.25rem;
+    }
+
+    .featured-card {
+        padding: 1.5rem 1rem;
+    }
+
+    .hero-tagline {
+        gap: 0.75rem;
+    }
+
+    .tagline-word {
+        font-size: 1.125rem;
+    }
+
+    .hero-badge {
+        font-size: 0.875rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Optimize for landscape mobile (common when Instagram rotates) */
+@media (max-width: 896px) and (orientation: landscape) {
+    .hero {
+        padding: 2rem 0 1.5rem;
+    }
+
+    .featured-card {
+        grid-template-columns: 1fr 1fr;
+        padding: 1.5rem;
+    }
+
+    .featured-image {
+        order: 1;
+    }
+
+    .cta-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
