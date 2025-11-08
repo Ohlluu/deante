@@ -733,10 +733,16 @@ body {
 }
 
 .footer-logo img {
-    width: 56px;
-    height: 56px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.footer-logo h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    font-weight: 700;
 }
 
 .footer-brand h3 {
